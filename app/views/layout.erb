@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
   <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
@@ -20,9 +21,11 @@
   <title></title>
 </head>
 <body>
-  <div class= "container">
+  <div class= "container pure-g-r">
     <%= erb :'/partials/_header' %>
+    <div class="pure-u-1-4"></div>
       <%= yield %>
+    <%= erb :'/partials/_user_nav' %>
     <%= erb :'/partials/_footer' %>
   </div>
 </body>

@@ -1,0 +1,41 @@
+<section id="register-user" class="content">
+  <h3>Register</h3>
+    <div class="error-alert">
+      <% @errors %>
+    </div>
+    <form class="pure-form" method="POST" action="/user/register">
+      <fieldset class="pure-group ">
+        <label for="firstname">
+          <input id="firstname" class="pure-input-1-2" type="text" name="user[firstname]" required autofocus placeholder="Firstname"/>
+      </label>
+
+      <label for="lastname">
+        <input id="lastname" class="pure-input-1-2" type="text" name="user[lastname]" required placeholder="Lastname"/>
+      </label>
+
+      <label for="username">
+        <input id="username" class="pure-input-1-2" type="text" name="user[username]" required placeholder="Username"/>
+      </label>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email">
+          <input id="email" class="pure-input-1-2" type="text" name="user[email]" required placeholder="You@there.com"/>
+      </label>
+      <label for="email-confirmation">
+          <input id="email-confirmation" class="pure-input-1-2" type="text" name="user[email_confirmation]" required placeholder="Re-enter email"/>
+      </label>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="password">
+          <input id="password" class="pure-input-1-2" type="text" name="user[password]" required placeholder="Password"/>
+      </label>
+      <label for="password-confirmation">
+          <input id="password-confirmation" class="pure-input-1-2" type="text" name="user[password_confirmation]" required placeholder="Re-enter password"/>
+      </label>
+    </fieldset>
+
+    <button id="register" class="pure-input-1-2 pure-button-primary pure-button" type="submit" value="register">Register</button>
+  </form>
+</section>

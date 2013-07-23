@@ -14,9 +14,13 @@ post '/user/register' do
                           )
   if @current_user.errors.empty?
     session[:id] = @current_user.id
-    erb :'user/portal'
+    erb :'user/home'
   else
     @errors = @current_user.errors
     erb :'/user/register'
   end
+end
+
+get '/user/home' do
+
 end
